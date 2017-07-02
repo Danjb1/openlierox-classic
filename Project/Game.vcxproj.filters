@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="System Files">
+      <UniqueIdentifier>{8e21d52c-c5cf-4db2-b4b0-5b4f0c8b89c1}</UniqueIdentifier>
+      <Extensions>cpp, h</Extensions>
+    </Filter>
+    <Filter Include="Game files">
+      <UniqueIdentifier>{f2346f10-d0cd-4430-8fa3-1614b39f4184}</UniqueIdentifier>
+      <Extensions>cpp; h</Extensions>
+    </Filter>
+    <Filter Include="Frontend">
+      <UniqueIdentifier>{b1c969da-bddd-49bf-99bf-d3a37ad0beba}</UniqueIdentifier>
+      <Extensions>cpp; h</Extensions>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{05e18d89-92f9-414e-8782-c33bc60688d1}</UniqueIdentifier>
+      <Extensions>lib</Extensions>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{335acce4-f08f-4746-bab6-a58453c964ed}</UniqueIdentifier>
+      <Extensions>*</Extensions>
+    </Filter>
+    <Filter Include="Game Core">
+      <UniqueIdentifier>{24bc8fb1-3cce-4cfc-86d0-b73c3e31b0d4}</UniqueIdentifier>
+      <Extensions>cpp, h</Extensions>
+    </Filter>
+    <Filter Include="Blast">
+      <UniqueIdentifier>{27ce9047-c3f0-43f2-8d10-68976ec74376}</UniqueIdentifier>
+      <Extensions>cpp, h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\2xsai.cpp">
+      <Filter>System Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\AuxLib.cpp">
+      <Filter>System Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Cache.cpp">
+      <Filter>System Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CBytestream.cpp">
+      <Filter>System Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CChannel.cpp">
+      <Filter>System Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CFont.cpp">
+      <Filter>System Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CInput.cpp">
+      <Filter>System Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ConfigHandler.cpp">
+      <Filter>System Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Error.cpp">
+      <Filter>System Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\FindFile.cpp">
+      <Filter>System Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\GfxPrimitives.cpp">
+      <Filter>System Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Graphics.cpp">
+      <Filter>System Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\MathLib.cpp">
+      <Filter>System Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\mmgr.cpp">
+      <Filter>System Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\Timer.cpp">
+      <Filter>System Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CBonus.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CChatBox.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CClient.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CClient_Draw.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CClient_Game.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CClient_Parse.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CClient_Send.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CGameScript.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CMap.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CNinjaRope.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CProjectile.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="server\CServer.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="server\CServer_Game.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="server\CServer_Parse.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="server\CServer_Send.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CShootList.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CViewport.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CWeather.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CWorm.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CWorm_AI.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CWorm_SendRecv.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CWorm_Simulate.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CWpnRest.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Entity.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\ProfileSystem.cpp">
+      <Filter>Game files</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CBrowser.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CButton.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CCheckbox.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CCombobox.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CGuiLayout.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CInputBox.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CListview.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CMenu.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CScrollbar.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CSlider.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CTextbox.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CTitleButton.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\CWidget.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Menu_Local.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Menu_Main.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Menu_Mapeditor.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Menu_Net.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Menu_Net_Host.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Menu_Net_Internet.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Menu_Net_Join.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Menu_Net_Lan.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Menu_Net_Main.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Menu_Net_News.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Menu_Options.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Menu_Player.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="client\MenuSystem.cpp">
+      <Filter>Frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="common\Command.cpp">
+      <Filter>Game Core</Filter>
+    </ClCompile>
+    <ClCompile Include="common\Console.cpp">
+      <Filter>Game Core</Filter>
+    </ClCompile>
+    <ClCompile Include="client\main.cpp">
+      <Filter>Game Core</Filter>
+    </ClCompile>
+    <ClCompile Include="common\Misc.cpp">
+      <Filter>Game Core</Filter>
+    </ClCompile>
+    <ClCompile Include="common\Networking.cpp">
+      <Filter>Game Core</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Options.cpp">
+      <Filter>Game Core</Filter>
+    </ClCompile>
+    <ClCompile Include="client\Sounds.cpp">
+      <Filter>Game Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\2xsai.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AuxLib.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bass.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Cache.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CBytestream.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CChannel.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CFont.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CInput.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CVec.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\defs.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Error.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FindFile.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GfxPrimitives.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MathLib.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nl.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RandomNumberList.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Timer.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\types.h">
+      <Filter>System Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CBonus.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CChatBox.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CClient.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CGameScript.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CMap.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CNinjaRope.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CProjectile.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CServer.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CShootList.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CViewport.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CWeather.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CWorm.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CWpnRest.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Entity.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameRules.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProfileSystem.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Protocol.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SVClient.h">
+      <Filter>Game files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CBrowser.h">
+      <Filter>Frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CButton.h">
+      <Filter>Frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CCheckbox.h">
+      <Filter>Frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CCombobox.h">
+      <Filter>Frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CGuiLayout.h">
+      <Filter>Frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CInputBox.h">
+      <Filter>Frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CLabel.h">
+      <Filter>Frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CListview.h">
+      <Filter>Frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CMenu.h">
+      <Filter>Frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CScrollbar.h">
+      <Filter>Frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSlider.h">
+      <Filter>Frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CTextbox.h">
+      <Filter>Frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CTitleButton.h">
+      <Filter>Frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CWidget.h">
+      <Filter>Frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Menu.h">
+      <Filter>Frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\con_cmd.h">
+      <Filter>Game Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Console.h">
+      <Filter>Game Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\main.h">
+      <Filter>Game Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Misc.h">
+      <Filter>Game Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Networking.h">
+      <Filter>Game Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Options.h">
+      <Filter>Game Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sounds.h">
+      <Filter>Game Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libs\bass.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="libs\HawkNL.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="libs\NLstatic.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="libs\pthreadVCE.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="libs\SDL.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="libs\SDL_image.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="libs\SDLmain.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="libs\zlibstat.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ico00001.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="icon1.ico">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

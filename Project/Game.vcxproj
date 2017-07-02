@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Win32">
+      <Configuration>Profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{A551774F-ED89-43CF-8F46-24B049B152A6}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\obj/Release\</OutDir>
+    <IntDir>.\obj/Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\obj/Debug\</OutDir>
+    <IntDir>.\obj/Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <OutDir>.\obj/profile\</OutDir>
+    <IntDir>.\obj/profile\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>include;blast;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\obj/Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\obj/Release\Game.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\obj/Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\obj/Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\obj/Release\Game.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0c09</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\obj/Release\Game.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>obj/Release/LieroX.exe</OutputFile>
+      <AdditionalDependencies>wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\obj/Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\obj/Debug\Game.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\obj/Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\obj/Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\obj/Debug\Game.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0c09</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\obj/Debug\Game.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\obj/Debug\Game.exe</OutputFile>
+      <AdditionalDependencies>wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions> /MAPINFO:LINES  /MAPINFO:EXPORTS </AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\obj/profile\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\obj/profile\Game.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\obj/profile\</ObjectFileName>
+      <ProgramDataBaseFileName>.\obj/profile\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\obj/profile\Game.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0c09</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\obj/profile\Game.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>obj/Profile/LieroX.exe</OutputFile>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="client\AuxLib.cpp" />
+    <ClCompile Include="client\Cache.cpp" />
+    <ClCompile Include="client\CBrowser.cpp" />
+    <ClCompile Include="client\CButton.cpp" />
+    <ClCompile Include="client\CChatBox.cpp" />
+    <ClCompile Include="client\CCheckbox.cpp" />
+    <ClCompile Include="client\CClient_Draw.cpp" />
+    <ClCompile Include="client\CClient_Game.cpp" />
+    <ClCompile Include="client\CClient_Parse.cpp" />
+    <ClCompile Include="client\CClient_Send.cpp" />
+    <ClCompile Include="client\CCombobox.cpp" />
+    <ClCompile Include="client\CFont.cpp" />
+    <ClCompile Include="client\CGuiLayout.cpp" />
+    <ClCompile Include="client\CInput.cpp" />
+    <ClCompile Include="client\CInputBox.cpp" />
+    <ClCompile Include="client\CListview.cpp" />
+    <ClCompile Include="client\CMenu.cpp" />
+    <ClCompile Include="client\CNinjaRope.cpp" />
+    <ClCompile Include="client\CScrollbar.cpp" />
+    <ClCompile Include="client\CSlider.cpp" />
+    <ClCompile Include="client\CTextbox.cpp" />
+    <ClCompile Include="client\CTitleButton.cpp" />
+    <ClCompile Include="client\CViewport.cpp" />
+    <ClCompile Include="client\CWeather.cpp" />
+    <ClCompile Include="client\CWidget.cpp" />
+    <ClCompile Include="client\Entity.cpp" />
+    <ClCompile Include="client\Error.cpp" />
+    <ClCompile Include="client\GfxPrimitives.cpp" />
+    <ClCompile Include="client\Graphics.cpp" />
+    <ClCompile Include="client\main.cpp" />
+    <ClCompile Include="client\MenuSystem.cpp" />
+    <ClCompile Include="client\Menu_Local.cpp" />
+    <ClCompile Include="client\Menu_Main.cpp" />
+    <ClCompile Include="client\Menu_Mapeditor.cpp" />
+    <ClCompile Include="client\Menu_Net.cpp" />
+    <ClCompile Include="client\Menu_Net_Host.cpp" />
+    <ClCompile Include="client\Menu_Net_Internet.cpp" />
+    <ClCompile Include="client\Menu_Net_Join.cpp" />
+    <ClCompile Include="client\Menu_Net_Lan.cpp" />
+    <ClCompile Include="client\Menu_Net_Main.cpp" />
+    <ClCompile Include="client\Menu_Net_News.cpp" />
+    <ClCompile Include="client\Menu_Options.cpp" />
+    <ClCompile Include="client\Menu_Player.cpp" />
+    <ClCompile Include="client\Options.cpp" />
+    <ClCompile Include="client\ProfileSystem.cpp" />
+    <ClCompile Include="client\Sounds.cpp" />
+    <ClCompile Include="common\2xsai.cpp" />
+    <ClCompile Include="common\CBonus.cpp" />
+    <ClCompile Include="common\CBytestream.cpp" />
+    <ClCompile Include="common\CChannel.cpp" />
+    <ClCompile Include="common\CClient.cpp" />
+    <ClCompile Include="common\CGameScript.cpp" />
+    <ClCompile Include="common\CMap.cpp" />
+    <ClCompile Include="common\Command.cpp" />
+    <ClCompile Include="common\ConfigHandler.cpp" />
+    <ClCompile Include="common\Console.cpp" />
+    <ClCompile Include="common\CProjectile.cpp" />
+    <ClCompile Include="common\CShootList.cpp" />
+    <ClCompile Include="common\CWorm.cpp" />
+    <ClCompile Include="common\CWorm_AI.cpp">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</TreatWarningAsError>
+    </ClCompile>
+    <ClCompile Include="common\CWorm_SendRecv.cpp" />
+    <ClCompile Include="common\CWorm_Simulate.cpp" />
+    <ClCompile Include="common\CWpnRest.cpp" />
+    <ClCompile Include="common\FindFile.cpp" />
+    <ClCompile Include="common\MathLib.cpp" />
+    <ClCompile Include="common\Misc.cpp" />
+    <ClCompile Include="common\mmgr.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="common\Networking.cpp" />
+    <ClCompile Include="common\Timer.cpp" />
+    <ClCompile Include="server\CServer.cpp" />
+    <ClCompile Include="server\CServer_Game.cpp" />
+    <ClCompile Include="server\CServer_Parse.cpp" />
+    <ClCompile Include="server\CServer_Send.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\2xsai.h" />
+    <ClInclude Include="include\AuxLib.h" />
+    <ClInclude Include="include\bass.h" />
+    <ClInclude Include="include\Cache.h" />
+    <ClInclude Include="include\CBonus.h" />
+    <ClInclude Include="include\CBrowser.h" />
+    <ClInclude Include="include\CButton.h" />
+    <ClInclude Include="include\CBytestream.h" />
+    <ClInclude Include="include\CChannel.h" />
+    <ClInclude Include="include\CChatBox.h" />
+    <ClInclude Include="include\CCheckbox.h" />
+    <ClInclude Include="include\CClient.h" />
+    <ClInclude Include="include\CCombobox.h" />
+    <ClInclude Include="include\CFont.h" />
+    <ClInclude Include="include\CGameScript.h" />
+    <ClInclude Include="include\CGuiLayout.h" />
+    <ClInclude Include="include\CInput.h" />
+    <ClInclude Include="include\CInputBox.h" />
+    <ClInclude Include="include\CLabel.h" />
+    <ClInclude Include="include\CListview.h" />
+    <ClInclude Include="include\CMap.h" />
+    <ClInclude Include="include\CMenu.h" />
+    <ClInclude Include="include\CNinjaRope.h" />
+    <ClInclude Include="include\Console.h" />
+    <ClInclude Include="include\con_cmd.h" />
+    <ClInclude Include="include\CProjectile.h" />
+    <ClInclude Include="include\CScrollbar.h" />
+    <ClInclude Include="include\CServer.h" />
+    <ClInclude Include="include\CShootList.h" />
+    <ClInclude Include="include\CSlider.h" />
+    <ClInclude Include="include\CTextbox.h" />
+    <ClInclude Include="include\CTitleButton.h" />
+    <ClInclude Include="include\CVec.h" />
+    <ClInclude Include="include\CViewport.h" />
+    <ClInclude Include="include\CWeather.h" />
+    <ClInclude Include="include\CWidget.h" />
+    <ClInclude Include="include\CWorm.h" />
+    <ClInclude Include="include\CWpnRest.h" />
+    <ClInclude Include="include\defs.h" />
+    <ClInclude Include="include\Entity.h" />
+    <ClInclude Include="include\Error.h" />
+    <ClInclude Include="include\FindFile.h" />
+    <ClInclude Include="include\GameRules.h" />
+    <ClInclude Include="include\GfxPrimitives.h" />
+    <ClInclude Include="include\Graphics.h" />
+    <ClInclude Include="include\main.h" />
+    <ClInclude Include="include\MathLib.h" />
+    <ClInclude Include="include\Menu.h" />
+    <ClInclude Include="include\Misc.h" />
+    <ClInclude Include="include\Networking.h" />
+    <ClInclude Include="include\nl.h" />
+    <ClInclude Include="include\Options.h" />
+    <ClInclude Include="include\ProfileSystem.h" />
+    <ClInclude Include="include\Protocol.h" />
+    <ClInclude Include="include\RandomNumberList.h" />
+    <ClInclude Include="include\Sounds.h" />
+    <ClInclude Include="include\SVClient.h" />
+    <ClInclude Include="include\Timer.h" />
+    <ClInclude Include="include\types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libs\bass.lib" />
+    <Library Include="libs\HawkNL.lib" />
+    <Library Include="libs\NLstatic.lib" />
+    <Library Include="libs\pthreadVCE.lib" />
+    <Library Include="libs\SDL.lib" />
+    <Library Include="libs\SDLmain.lib" />
+    <Library Include="libs\SDL_image.lib" />
+    <Library Include="libs\zlibstat.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ico00001.ico" />
+    <Image Include="icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
