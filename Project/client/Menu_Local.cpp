@@ -711,7 +711,7 @@ int Menu_LocalGetTeam(int count)
 
 	if(items) {
 		lv_subitem_t *sub = items->tSubitems;
-		for(i=0;i<2;i++) {
+		for(int i=0;i<2;i++) {
 			if(sub)
 				sub=sub->tNext;
 		}

@@ -874,7 +874,8 @@ void CClient::ShootBeam(CWorm *w)
 
 	int stopbeam = false;
 
-	for(int i=0; i<Slot->Weapon->Bm_Length; i+=divisions) {
+	int i;
+	for(i=0; i<Slot->Weapon->Bm_Length; i+=divisions) {
 		uchar px = cMap->GetPixelFlag( (int)pos.GetX(), (int)pos.GetY() );
 
 		if(px & PX_DIRT || px & PX_ROCK) {
@@ -1158,7 +1159,8 @@ void CClient::LaserSight(CWorm *w)
 
 	int stopbeam = false;
 
-	for(int i=0; i<9999; i+=divisions) {
+	int i;
+	for(i=0; i<9999; i+=divisions) {
 		uchar px = cMap->GetPixelFlag( (int)pos.GetX(), (int)pos.GetY() );
 
 		if(px & PX_DIRT || px & PX_ROCK)			
@@ -1317,7 +1319,8 @@ void CClient::ProcessShot_Beam(shoot_t *shot)
 
 	int stopbeam = false;
 
-	for(int i=0; i<wpn->Bm_Length; i+=divisions) {
+	int i;
+	for(i=0; i<wpn->Bm_Length; i+=divisions) {
 		uchar px = cMap->GetPixelFlag( (int)pos.GetX(), (int)pos.GetY() );
 
 		if(px & PX_DIRT || px & PX_ROCK) {

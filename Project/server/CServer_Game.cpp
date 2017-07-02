@@ -119,7 +119,7 @@ void CServer::SimulateGame(void)
 
 
 	// Check if any bonuses have been in for too long and need to be destroyed
-	for(i=0; i<MAX_BONUSES; i++) {
+	for(int i=0; i<MAX_BONUSES; i++) {
 		if(!cBonuses[i].getUsed())
 			continue;
 
@@ -429,7 +429,7 @@ void CServer::gotoLobby(void)
 		}
 	}
 
-	for(i=0; i<MAX_CLIENTS; i++) {
+	for(int i=0; i<MAX_CLIENTS; i++) {
 		cClients[i].setGameReady(false);
 	}
 

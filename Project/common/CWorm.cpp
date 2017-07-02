@@ -75,7 +75,7 @@ void CWorm::Clear(void)
 	for(int i=0;i<NUM_FRAMES;i++)
 		fFrameTimes[i] = -99999.0f;
 
-	for(i=0; i<5; i++)
+	for(int i=0; i<5; i++)
 		tWeapons[i].Weapon = NULL;
 
     psPath = NULL;

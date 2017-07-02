@@ -72,7 +72,7 @@ void CChatBox::AddText(char *txt, int colour, float time)
 
         // If we're over the edge & found no spaces, do a hard break
         nPos = 0;
-        for(i=0; i<nLength+1; i++) {
+        for(int i=0; i<nLength+1; i++) {
             sprintf(buf,"%c",txt[i]);
             nPos += tLX->cFont.GetWidth(buf);
             if(nPos > nWidth) {

@@ -61,7 +61,7 @@ void CClient::Clear(void)
 	// Clear the message sizes
 	memset(nMessageSizes, 0, sizeof(int)*RATE_NUMMSGS);
 
-    for(i=0; i<NUM_VIEWPORTS; i++) {
+    for(int i=0; i<NUM_VIEWPORTS; i++) {
         cViewports[i].setUsed(false);
         cViewports[i].setID(i);
     }    
@@ -92,14 +92,14 @@ void CClient::MinorClear(void)
 	for(int i=0; i<MAX_WORMS; i++)
 		cRemoteWorms[i].setGameReady(false);
 
-	for(i=0; i<MAX_PROJECTILES; i++)
+	for(int i=0; i<MAX_PROJECTILES; i++)
 		cProjectiles[i].setUsed(false);
     nTopProjectile = 0;
 
-	for(i=0; i<MAX_BONUSES; i++)
+	for(int i=0; i<MAX_BONUSES; i++)
 		cBonuses[i].setUsed(false);
 
-    for(i=0; i<NUM_VIEWPORTS; i++)
+    for(int i=0; i<NUM_VIEWPORTS; i++)
         cViewports[i].setUsed(false);
 }
 

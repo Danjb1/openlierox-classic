@@ -1607,7 +1607,8 @@ int CWorm::traceLine(CVec target, CMap *pcMap, float *fDist, int *nType)
 	// Make sure we have at least 1 division
 	divisions = MAX(divisions,1);
 
-	for(int i=0; i<nTotalLength; i+=divisions) {
+	int i;
+	for(i=0; i<nTotalLength; i+=divisions) {
 		uchar px = pcMap->GetPixelFlag( (int)pos.GetX(), (int)pos.GetY() );
 
         if(px & PX_DIRT || px & PX_ROCK) {

@@ -147,7 +147,12 @@
       <SubSystem>Windows</SubSystem>
       <OutputFile>.\obj/Debug\Game.exe</OutputFile>
       <AdditionalDependencies>wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalOptions> /MAPINFO:LINES  /MAPINFO:EXPORTS </AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">

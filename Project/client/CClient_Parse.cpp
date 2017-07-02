@@ -398,7 +398,7 @@ bool CClient::ParsePrepareGame(CBytestream *bs)
     // Team games require changing worm colours to match the team colour
 	// Inefficient, but i'm not going to redesign stuff for a simple gametype
 	CWorm *w = cRemoteWorms;
-	for(i=0;i<MAX_WORMS;i++,w++) {
+	for(int i=0;i<MAX_WORMS;i++,w++) {
 		if(w->isUsed()) {
 			w->LoadGraphics(iGameType);
 

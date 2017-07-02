@@ -109,7 +109,7 @@ int CServer::StartServer(char *name, int port, int maxplayers, int regserver)
 		//RegisterServer();
 
 	// Initialize the clients
-	for(i=0;i<MAX_CLIENTS;i++) {
+	for(int i=0;i<MAX_CLIENTS;i++) {
 		cClients[i].Clear();
 
 		// Initialize the shooting list
@@ -202,7 +202,7 @@ int CServer::StartGame(void)
 	}
 
 	// Clear bonuses
-	for(i=0; i<MAX_BONUSES; i++)
+	for(int i=0; i<MAX_BONUSES; i++)
 		cBonuses[i].setUsed(false);
 
 	// Clear the shooting list
@@ -213,7 +213,7 @@ int CServer::StartGame(void)
 	fLastBonusTime = tLX->fCurTime;
 
 	// Set all the clients to 'not ready'
-	for(i=0;i<MAX_CLIENTS;i++) {
+	for(int i=0;i<MAX_CLIENTS;i++) {
 		cClients[i].getShootList()->Clear();
 		cClients[i].setGameReady(false);
 	}
@@ -227,7 +227,7 @@ int CServer::StartGame(void)
             CWorm *w = cWorms;
             CBytestream b;
 
-            for( i=0; i<MAX_WORMS; i++, w++ ) {
+            for( int i=0; i<MAX_WORMS; i++, w++ ) {
                 if( !w->isUsed() )
                     continue;
             

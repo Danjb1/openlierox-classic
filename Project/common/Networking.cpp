@@ -278,7 +278,8 @@ void http_CreateHostUrl(char *host, char *url)
     strcpy(http_url, "");
 
     // All characters up to a / goes into the host
-    for( int i=0; i<strlen(host); i++ ) {
+	int i;
+    for( i=0; i<strlen(host); i++ ) {
         if( host[i] != '/' )
             http_host[i] = host[i];
         else {

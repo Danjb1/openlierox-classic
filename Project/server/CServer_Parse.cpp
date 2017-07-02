@@ -248,12 +248,12 @@ void CServer::ParseDeathPacket(CClient *cl, CBytestream *bs)
 			int team = vict->getTeam();
 			int teamcount = 0;
 
-			for(i=0;i<4;i++)
+			for(int i=0;i<4;i++)
 				TeamCount[i]=0;
 
 			// Check if anyone else is left on the team
 			w = cWorms;
-			for(i=0;i<MAX_WORMS;i++,w++) {
+			for(int i=0;i<MAX_WORMS;i++,w++) {
 				if(w->isUsed()) {
 					if(w->getLives() != WRM_OUT && w->getTeam() == team)
 						teamcount++;
@@ -272,7 +272,7 @@ void CServer::ParseDeathPacket(CClient *cl, CBytestream *bs)
 			// If there is only 1 team left, declare the last team the winner
 			int teamsleft = 0;
 			team=0;
-			for(i=0;i<4;i++) {
+			for(int i=0;i<4;i++) {
 				if(TeamCount[i]) {
 					teamsleft++;
 					team=i;
