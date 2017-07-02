@@ -11,3 +11,5 @@ The included Visual Studio project should build without errors.
 If you see the error **cannot open include file 'afxres.h'**, you need to install the "MFC and ATL support" component:
 
  > Visual Studio Installer > Modify > Individual components > "SDKs, libraries and frameworks" section
+
+Building the project results in *Project/obj/Debug/Game.exe* (for a debug build) or *Project/obj/Release/LieroX.exe* (for a release build) being created. Copy this file to the *GameDir* and you should be able to run it!
